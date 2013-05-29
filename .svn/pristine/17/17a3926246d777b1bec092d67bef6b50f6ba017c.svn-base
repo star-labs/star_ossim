@@ -1,0 +1,22 @@
+//*******************************************************************
+//
+// LICENSE: LGPL
+//
+// see top level LICENSE.txt
+// 
+// Author: Garrett Potts
+// Description: Nitf support class
+// 
+//********************************************************************
+// $Id$
+
+#include <ossim/support_data/ossimNitfRpcBTag.h>
+
+RTTI_DEF1(ossimNitfRpcBTag, "ossimNitfRpcBTag", ossimNitfRpcBase);
+
+ossimNitfRpcBTag::ossimNitfRpcBTag()
+   : ossimNitfRpcBase()
+{
+   // Set the tag name in base.
+   setTagName(std::string("RPC00B"));
+}
